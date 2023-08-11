@@ -9,7 +9,7 @@ npm run dev --->Spin up local server
 # or
 yarn dev
 # or
-pnpm dev
+pnpm dev--->Recommended
 # or
 bun dev
 ```
