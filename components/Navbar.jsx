@@ -1,6 +1,13 @@
 import React from "react";
-
+import Link from "next/link";
 const Navbar = () => {
+  const links = [
+    { href: "/client", label: "Client" },
+    { href: "/about", label: "About" },
+    { href: "/drinks", label: "Drinks" },
+    { href: "/query", label: "Query" },
+    { href: "/tasks", label: "Tasks" },
+  ];
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
@@ -8,9 +15,13 @@ const Navbar = () => {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Link</a>
-          </li>
+          {links.map((link) => {
+            return (
+              <li>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
