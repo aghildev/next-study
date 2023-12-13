@@ -9,16 +9,20 @@ const Navbar = () => {
     { href: "/tasks", label: "Tasks" },
   ];
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 bg-slate-900">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href="/" className="text-2xl text-cyan-800">
+          Next JS App
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           {links.map((link) => {
             return (
               <li>
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href} className="text-fuchsia-300">
+                  {link.label}
+                </Link>
               </li>
             );
           })}
