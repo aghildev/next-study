@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react'
 
-const error = ({error}) => {
-    console.log(error)
+const error = (error) => {
+//    console.log(error.Error)
   return (
-    <div>error</div>
+    <div>{error?.error?.message}</div>
   )
 }
 

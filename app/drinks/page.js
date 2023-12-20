@@ -1,5 +1,5 @@
 import React from 'react'
-const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a'
+const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.ph2p?f=a'
 const fetchDrinks = async ()=>{
 const res = await fetch (url)
 if(!res.ok){
