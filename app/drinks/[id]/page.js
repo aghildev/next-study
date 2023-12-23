@@ -1,8 +1,9 @@
 import React from 'react'
 
-const DrinksSinglePage = () => {
+const DrinksSinglePage = ({params}) => {
+    console.log(params)
   return (
-    <div>DrinksSinglePage</div>
+    <div>DrinksSinglePage--{params.id}</div>
   )
 }
 
