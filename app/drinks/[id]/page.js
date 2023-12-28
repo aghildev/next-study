@@ -18,7 +18,7 @@ const DrinksSinglePage = async ({params}) => {
     <div>
 <h1>{data?.drinks[0]?.strDrink}</h1>
 {/* <img src = {drinkImg.src} alt="drink"/> */}
-<Image src = {drinkImg.src} width ={300} height={300} className='w-48'/>
+<Image src = {data?.drinks[0]?.strDrinkThumb} width ={300} height={300} className='w-48 h-48 rounded-xl'priority/>
     </div>
   )
 }
